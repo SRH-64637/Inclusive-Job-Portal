@@ -29,7 +29,7 @@ This project is an inclusive web-based job portal designed to support neurodiver
 
 - **Frontend**: React (or HTML/CSS/JavaScript)
 - **Backend**: Node.js, Express
-- **Database**: MySQL (raw SQL, no ORM)
+- **Database**: MySQL (raw SQL)
 - **Containerization**: Docker, Docker Compose
 - **Tools**: Postman (API testing), dbdiagram.io (ERD), bcrypt (auth)
 
