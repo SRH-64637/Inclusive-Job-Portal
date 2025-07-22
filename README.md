@@ -1,68 +1,89 @@
-# Inclusive Job Portal
+Inclusive Community, Career, and Wellness Platform
 
 ## Project Summary
 
-This platform connects job seekers with supportive, inclusive employers, with a special focus on individuals who are neurodivergent (such as those with ADHD, dyslexia, autism, or speech differences), without labeling or limiting them.
+The is an all-in-one platform designed to support neurodivergent individuals (such as those with ADHD, dyslexia, autism, or anxiety) by offering a secure, skill-based, and stigma-free environment for professional development, mental wellness, and social connection.
 
-Instead of being a “neurodivergent-only” site, the platform uses a **skill-first, user-controlled disclosure** approach to ensure fairness, flexibility, and a broader range of opportunities.
-
----
-
-## Core Principles
-
-- **Skill-Based Matching:** Emphasizes candidates’ skills, portfolios, and assessments rather than personal or medical histories.
-- **Optional Disclosure:** Users are not required to disclose neurodivergence and can choose when or if to share personal needs.
-- **Inclusive Employer Network:** Only companies committed to inclusive hiring practices may post jobs and specify available accommodations.
-- **Support Without Stigma:** Provides anonymous resources such as interview prep, wellness guides, and productivity tools.
-- **Label the Workplace, Not the Person:** Employers’ listings include environment markers (e.g., “neurodivergent-friendly,” “flexible hours”) without tagging applicants.
+The platform combines features such as an inclusive job board, wellness tools, digital planners, and community forums, making it suitable for regular daily or weekly use.
 
 ---
 
 ## Objective
 
-Create a safer, equitable job search experience where users can find opportunities based on skills without compromising dignity or privacy.
+To empower neurodivergent individuals by:
+- Connecting them to inclusive, understanding employers
+- Providing access to wellness tools and counseling
+- Creating peer-driven community spaces
+- Ensuring privacy, user choice, and skill-first engagement
 
 ---
 
 ## Core Features
 
-1. **Job Posting by Inclusive Employers**  
-2. **Job Search and Filtering System**  
-3. **Skill-Based User Profiles**  
-4. **Job Application Tracking System**  
-5. **Employer Dashboard for Job Management**  
-6. **Candidate Dashboard for Application Management**  
-7. **Environment Compatibility Tags on Jobs**  
-8. **Anonymous Support Resources**
+1. **User Dashboard**  
+   Central hub for managing jobs, routines, wellness logs, and messages.
+
+2. **Inclusive Job Board**  
+   Employers tag their job environments (e.g., "quiet workspace", "flexible hours") and commit to fair hiring practices.
+
+3. **Routine Planner with Reminders**  
+   Custom planners with optional notifications for daily structure and habit-building.
+
+4. **Peer Forums and Group Chats**  
+   Interest-based and anonymous spaces for discussion, support, and advice.
+
+5. **Counseling and Support Booking**  
+   Schedule sessions with licensed professionals or verified peer mentors.
+
+6. **Daily Wellness Check-ins**  
+   Track mood, energy, focus, and reflect with private logs.
+
+7. **Achievement Tracker**  
+   Visual progress through badges for engagement (e.g., attending events, applying to jobs).
+
+8. **Personalized Resource Feed**  
+   Curated materials including coping strategies, job prep, and easy-read guides.
 
 ---
 
-## Additional Features (Optional)
+## Security and Privacy
 
-- Resume upload and parsing  
-- Role-based access control and moderation  
-- Employer feedback to candidates  
-- Basic job recommendation engine  
-- Anonymous question submission to employers  
-- Plain English / Easy Read interface mode  
+- Encrypted login and password storage (bcrypt, JWT)
+- Role-based access control (users, employers, mentors, admins)
+- Journal and counseling data encrypted at rest
+- Moderation system for reporting and flagging content
+- Full anonymity control in public and semi-public spaces
 
 ---
 
 ## Tech Stack
 
 - Backend: Node.js with Express.js  
-- Database: MySQL (raw SQL)  
-- Frontend: HTML and CSS  
+- Database: MySQL (with raw SQL queries)  
+- Frontend: HTML, CSS  
+- Authentication: JWT and bcrypt  
+- Deployment: (To be configured based on host)
 
 ---
 
 ## Database Overview
 
-Main tables include:  
-- `users` (job seekers and employers)  
-- `jobs` (job listings)  
-- `applications` (job applications)  
-- `skills` and `user_skills` (to match abilities)  
-- `accommodations` and `job_accommodations` (to support inclusive filters)  
+### Key Tables
+- `users` – User details with roles (job seeker, counselor, employer)
+- `jobs` – Inclusive job listings with optional accommodations
+- `applications` – Job applications and statuses
+- `messages` – Forum posts and private messages
+- `checkins` – Wellness logs by date
+- `routines` – Daily planner entries
+- `sessions` – Counseling and support appointments
+- `resources` – Knowledge base and external tools
+- `badges` – User achievements and progress markers
 
+---
 
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/neuroverse.git
+   cd neuroverse
